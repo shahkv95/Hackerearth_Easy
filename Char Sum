@@ -1,0 +1,120 @@
+Consider All lowercase Alphabets of the English language. Here we consider each alphabet from a to z to have a certain weight.
+The weight of the alphabet a is considered to be 1, b to be 2, c to be 3 and so on until z has a weight of 26. In short, the weight of
+the alphabet a is 1, and the weight of all other alphabets is the weight of its previous alphabet + 1.
+
+Now, you have been given a String S consisting of lowercase English characters. You need to find the summation of weight of each character
+in this String.
+
+For example, Consider the String aba
+
+Here, the first character a has a weight of 1, the second character b has 2 and the third character a again has a weight of 1. So the
+summation here is equal to : 1+2+1=4
+
+Input Format:
+
+The first and only line of input contains the String S.
+
+Output Format:
+
+Print the required answer on a single line
+
+Constraints:
+
+1≤|S|≤100
+
+SAMPLE INPUT 
+aba
+SAMPLE OUTPUT 
+4
+Explanation
+None
+
+
+Time Limit:	1.0 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Marks are awarded when all the testcases pass.
+Allowed Languages:	Bash, C, C++, C++14, Clojure, C#, D, Erlang, F#, Go, Groovy, Haskell, Java, Java 8, JavaScript(Rhino),
+JavaScript(Node.js), Julia, Kotlin, Lisp, Lisp (SBCL), Lua, Objective-C, OCaml, Octave, Pascal, Perl, PHP, Python, Python 3,
+R(RScript), Racket, Ruby, Rust, Scala, Swift, Swift-4.1, Visual Basic
+
+*****************************************************************************************************************************************
+                                            PROGRAM CODE IN C++
+*****************************************************************************************************************************************
+
+
+#include <iostream>
+//#include<ansbyshahkv>
+using namespace std;
+
+int main() {
+    string s;
+        cin>>s;
+        int sum = 0;
+        for(int i = 0 ; i<s.length();i++)
+        {
+            switch(s[i])
+            {
+                case 'a' : sum += 1 ;
+                            break ;
+                case 'b' : sum += 2 ;
+                            break ;
+                case 'c' : sum += 3 ;
+                            break ;
+                case 'd' : sum += 4 ;
+                            break ;
+                case 'e' : sum += 5 ;
+                            break ;
+                case 'f' : sum += 6 ;
+                            break ;
+                case 'g' : sum += 7 ;
+                            break ;
+                case 'h' : sum += 8 ;
+                            break ;
+                case 'i' : sum += 9 ;
+                            break ;
+                case 'j' : sum += 10 ;
+                            break ;
+                case 'k' : sum += 11 ;
+                            break ;
+                case 'l' : sum += 12 ;
+                            break ;
+                case 'm' : sum += 13 ;
+                            break ;
+                case 'n' : sum += 14 ;
+                            break ;
+                case 'o' : sum += 15 ;
+                            break ;
+                case 'p' : sum += 16 ;
+                            break ;
+                case 'q' : sum += 17 ;
+                            break ;
+                case 'r' : sum += 18 ;
+                            break ;
+                case 's' : sum += 19 ;
+                            break ;
+                case 't' : sum += 20 ;
+                            break ;
+                case 'u' : sum += 21 ;
+                            break ;
+                case 'v' : sum += 22 ;
+                            break ;
+                case 'w' : sum += 23 ;
+                            break ;
+                case 'x' : sum += 24 ;
+                            break ;            
+                case 'y' : sum += 25 ;
+                            break ;
+                case 'z' : sum += 26 ;
+                            break ; 
+            }
+            
+        }
+        cout<<sum ;
+    return 0 ;
+}
+
+
+*****************************************************************************************************************************************
+PLEASE DON'T COPY THE CODE DIRECTLY. FIRST TRY YOURSELF AND THEN IF YOU FAIL REFER JUST FOR REFERENCE.
+*****************************************************************************************************************************************
