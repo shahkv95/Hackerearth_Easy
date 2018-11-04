@@ -1,0 +1,60 @@
+Rahul is a very busy persion he dont wan't to waste his time . He keeps account of duration of each and every work. Now he don't even
+get time to calculate duration of works, So your job is to count the durations for each work and give it to rahul.
+
+ 
+
+Input:
+
+First line will be given by N number of works
+Next N line will be given SH,SM,EH and EM  each separated by space(SH=starting hr, SM=starting min, EH=ending hr, EM=ending min)
+Output:
+
+N lines with duration HH MM(hours and minutes separated by space)
+SAMPLE INPUT 
+2
+1 44 2 14
+2 42 8 23
+SAMPLE OUTPUT 
+0 30
+5 41
+
+
+Time Limit:	1.0 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Marks are awarded when all the testcases pass.
+Allowed Languages:	Bash, C, C++, C++14, Clojure, C#, D, Erlang, F#, Go, Groovy, Haskell, Java, Java 8, JavaScript(Rhino),
+JavaScript(Node.js), Julia, Kotlin, Lisp, Lisp (SBCL), Lua, Objective-C, OCaml, Octave, Pascal, Perl, PHP, Python, Python 3,
+R(RScript), Racket, Ruby, Rust, Scala, Swift, Swift-4.1, Visual Basic
+
+*****************************************************************************************************************************************
+                                            PROGRAM CODE IN C++
+*****************************************************************************************************************************************
+
+#include <iostream>
+//#include<ansbyshahkv>
+using namespace std ;
+ 
+int main(){
+    int n;
+    cin>>n;
+    int sh,sm,eh,em,dh,dm;
+    for(int i = 0 ; i < n ; i++)
+    {
+        cin>>sh>>sm>>eh>>em ;
+        dh = eh - sh ;
+        dm = em - sm ;
+        if(dm<0)
+        {
+            dm=em+60-sm;
+            dh-=1;
+        }
+        cout<<dh<<" "<<dm<<"\n";
+    }
+    return 0 ;
+    
+}
+
+*****************************************************************************************************************************************
+PLEASE DON'T COPY THE CODE DIRECTLY. FIRST TRY YOURSELF AND THEN IF YOU FAIL REFER JUST FOR REFERENCE.
+*****************************************************************************************************************************************
